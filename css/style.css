@@ -5,6 +5,7 @@
     --primario: #784d3c;
     --blanco: #ffffff;
     --negro: #0000;
+    --gris: #e1e1e1;
 }
 
 .html{
@@ -23,10 +24,10 @@
 
 /**Globales**/
 .contenedor{
-    max-width: 120rem;
+    max-width: 50rem;
     width: 90%;
     margin: 0 auto;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 a {
     text-decoration: none;
@@ -58,7 +59,7 @@ img{
     background-position: center center;
 }
 .header__texto{
-    margin-top: 5rem;
+    margin-top: 3rem;
     text-align: center;
     color: var(--blanco);
 }
@@ -67,20 +68,21 @@ img{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0 7rem;
+        margin: 0 3rem;
     }
 }
 
 .logo{
-    padding: 1rem 0;
     color: var(--blanco);
+    margin: 0 -11rem;
 }
 .logo__nombre{
     font-weight: 100;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
 }
 @media (min-width: 480px) {
     .logo__nombre{
+        display: inline-flex;
         font-weight: 100;
         margin-bottom: 0rem;
     }
@@ -93,6 +95,7 @@ img{
     .navegacion{
         display: flex;
         gap: 2rem;
+        margin-left: 36rem;
     }
 }
 .navegacion__enlace{
@@ -102,3 +105,61 @@ img{
     color: var(--blanco);
 }
 
+@media (min-width: 480px) {
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.entrada{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+.entrada:last-of-type{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.boton{
+    display: block;
+    font-family: var(--fuenteHeding);
+    color: var(--blanco);
+    text-align: center;
+    padding: .5rem 3rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+@media (min-width: 480px) {
+    .boton{
+        display:inline-block;
+    }
+}
+.boton--primario{
+    background-color: black;
+}
+.boton--secundario{
+    background-color: var(--primario);
+}
+.cursos{
+    list-style: none;
+}
+
+.widget-curso{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+.widget-curso:last-of-type{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.widget-curso__label{
+    font-family: var(--fuenteHeding);
+    font-weight: 700;
+}
+.widget-curso__info{
+    font-weight: 200;
+}
