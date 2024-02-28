@@ -174,17 +174,54 @@ img{
 .footer{
     text-align: center;
     background-color: black;
-    display: block ruby;
     row-gap: 10rem;
+    padding-top: -2rem;
+    padding-bottom: 2rem; 
 }
-.footer_h1{
-    color: var(--blanco);
-    padding: 2rem;
-    padding-left: -15rem;
+@media (min-width: 480px) {
+.footer{
+    text-align: center;
+    background-color: black;
+    row-gap: 10rem;
+    padding: 1.5rem 0 
 }
-.footer__enlace{
-    color: var(--blanco);
 }
-.footer__enlace:last-of-type{
-    margin-right: 24rem;
+
+@media (min-width: 480px) {
+    .sobre-nosotros{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        gap: 1rem;
+    }   
+}
+.sobre-nosotros__imagen{
+    margin-bottom: 2rem;
+}
+.sobre{
+    font-size: 1.8rem;
+    margin-top: .5rem;
+}
+.sobre-nosotros__texto{
+    margin-top: -1rem;
+}
+
+@media (min-width: 480px) {
+    .cursoshtml{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
+        margin: 2rem;
+    }
+}       
+.cursoshtml{
+    border-bottom: 1px solid var(--gris);
+}
+.curso_titulos{
+    font-size: 1.3rem;
+}
+.cursos_imagen{
+    margin-bottom: 2rem;
+}
+.cursoshtml:last-of-type{
+    border-bottom:none;
 }
